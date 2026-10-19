@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>My 3D Room</title>
+  </head>
+  <body>
+    <div id="app">
+      <div
+        id="overlay"
+        class="fixed inset-0 z-10 flex items-center justify-center bg-black/60 p-6 text-white"
+      >
+        <div class="max-w-md text-center">
+          <p class="mb-2 text-sm uppercase tracking-[0.3em] text-gray-300">
+            3D Interior Experience
+          </p>
+
+          <h1 class="mb-4 text-4xl font-bold">
+            My 3D Room
+          </h1>
+
+          <p class="mb-6 text-gray-200">
+            Explore my room in 3D!
+          </p>
+
+          <button
+            id="start-button"
+            class="rounded-full bg-sky-400 px-8 py-3 font-semibold text-black transition hover:bg-gray-200"
+          >
+            Enter Room
+          </button>
+
+          <p class="mt-6 text-sm text-gray-300">
+            WASD to move · QE to move up & down· Mouse to look · Scroll to zoom ·
+            ESC to exit
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="pointer-events-none fixed bottom-5 left-1/2 z-10 -translate-x-1/2 rounded-full bg-black/60 px-5 py-3 text-sm text-white"
+      >
+        W A S D &nbsp; Move
+        <span class="mx-2 text-gray-500">|</span>
+        Q E &nbsp; Up/Down
+        <span class="mx-2 text-gray-500">|</span>
+        Mouse &nbsp; Look
+        <span class="mx-2 text-gray-500">|</span>
+        Scroll &nbsp; Zoom
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
