@@ -43,7 +43,7 @@ scene.add(sunLight)
 const loader = new GLTFLoader()
 
 loader.load(
-  '/models/my-3d-room-01.glb',
+  `${import.meta.env.BASE_URL}models/my-3d-room-01.glb`,
   (gltf) => {
     scene.add(gltf.scene)
     console.log('Room model loaded successfully!')
